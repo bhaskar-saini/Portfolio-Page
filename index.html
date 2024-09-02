@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaskar Saini</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa solid fa-b"></i>
+                    <div class="logo-text">
+                        Bhaskar Saini
+                    </div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="hero-container">
+                <div class="hero-img">
+                    <img src="./images/profile.jpeg" alt="Profile-Pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Front-End Developer</span></h5>
+                    <h1>Bhaskar Saini</h1>
+                    <p>I'm Computer Science Engineering Graduate from Chandigarh University,Mohali. Primarily interested in MERN Stack Development and Software Testing.</p>
+                    <br>
+                    <p>I enjoy learning new skills and implementing them in real life! I'm currently exploring Machine learning.</p>
+                    <div class="btn-grp">
+                        <a href="#" class="btn active">Download CV</a>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script>
+        const togglebtn = document.querySelector(".togglebtn");
+        const nav = document.querySelector(".navlinks");
+        const links = document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener('click',function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed = new Typed(".input",{
+            strings:["Front-End Developer","Mern Stack Developer"],
+            typeSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+    </script>
+</body>
+</html>
